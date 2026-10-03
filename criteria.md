@@ -23,7 +23,10 @@ For at least 4 of my 5 test questions, the retrieved chunks include one that
 contains the answer.
 
 **Why this target:**
+<!-- e.g. "One of my questions is about a topic only two documents mention, so
+     I expect that one to be hard." -->
 One of my question is about when can I choose the major, and the source is in `admin_declaring_a_major.txt`
+
 ---
 
 ## 2. Every answer names a source
@@ -33,6 +36,13 @@ Every answer the system produces names at least one source document.
 **Why this target:**
 <!-- Why all five and not four? What about your setup makes that achievable —
      or what would have to go wrong for it not to be? -->
+`build_prompt` labels every chunk `[from {source}]`, so the filename is always
+in front of the model, and `GROUNDING_INSTRUCTION` requires naming it. The
+mechanism is already there — five of five is the right bar because a missing
+citation isn't a near miss, it's an untraceable answer. What would have to go
+wrong: the model answering from training data instead of the documents, or
+dropping the citation under the instruction's two-or-three-sentence brevity
+rule, which is where I'd expect it to give first.
 
 ---
 

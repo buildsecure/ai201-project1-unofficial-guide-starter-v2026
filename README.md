@@ -26,6 +26,7 @@
      this repo.
 
      Milestone 5. -->
+A RAG system built on the campus_life corpus — 88 short posts about students life at a university, dining halls, dorms, courses, and the administrative rules. Students can ask questions in plain english, and the system returns the results based on the documents. Students can ask questions like `Provide me information on parking permits`, `When is the add deadline?`, `When I must declare a major?`
 
 ## Chunking Strategy
 
@@ -41,6 +42,10 @@
      more than pretending you got it right first time.
 
      Milestone 3. -->
+
+Chunk size: 400 characters Overlap: 80 characters (used only when a paragraph exceeds 400 characters)
+
+The campus_life corpus is made up of 88 documents, 27,908 characters, about 317 characters per document
 
 ## Sample Chunks
 
