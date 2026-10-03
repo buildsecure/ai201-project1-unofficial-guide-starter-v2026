@@ -23,9 +23,7 @@ For at least 4 of my 5 test questions, the retrieved chunks include one that
 contains the answer.
 
 **Why this target:**
-<!-- e.g. "One of my questions is about a topic only two documents mention, so
-     I expect that one to be hard." -->
-One of my question is about when can I choose the major
+One of my question is about when can I choose the major, and the source is in `admin_declaring_a_major.txt`
 ---
 
 ## 2. Every answer names a source
