@@ -16,7 +16,7 @@ To switch corpus, either edit `CORPUS` in `config.py`, add
 `AI201_CORPUS=name` to your `.env`, or pass `--corpus name` on the command
 line. Re-run `python app.py index` after switching.
 
-## `campus_life`
+## `campus_life (I chose this corpus)`
 
 **Short posts about student life at a university.** Eighty-eight documents, most of them one to three short paragraphs — the kind of thing one student writes to answer another's question. Dining halls, dorms, courses, and the administrative rules nobody explains properly. Useful information tends to sit in a single sentence.
 

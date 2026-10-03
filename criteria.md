@@ -25,7 +25,7 @@ contains the answer.
 **Why this target:**
 <!-- e.g. "One of my questions is about a topic only two documents mention, so
      I expect that one to be hard." -->
-
+One of my question is about when can I choose the major
 ---
 
 ## 2. Every answer names a source
