@@ -26,6 +26,7 @@ contains the answer.
 <!-- e.g. "One of my questions is about a topic only two documents mention, so
      I expect that one to be hard." -->
 One of my question is about when can I choose the major, and the source is in `admin_declaring_a_major.txt`, a short passage on the declaring a major. The chunk should contain the answer `You declare at the end of your second semester, or later if you need to.` 
+
 ---
 
 ## 2. Every answer names a source
