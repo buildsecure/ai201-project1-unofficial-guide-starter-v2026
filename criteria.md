@@ -25,7 +25,7 @@ contains the answer.
 **Why this target:**
 <!-- e.g. "One of my questions is about a topic only two documents mention, so
      I expect that one to be hard." -->
-One of my question is about when can I choose the major, and the source is in `admin_declaring_a_major.txt`
+One of my question is about when can I choose the major, and the source is in `admin_declaring_a_major.txt`, a short passage that other advising files with similar vocabulary could outrank, so I allow one miss.
 
 ---
 
@@ -36,13 +36,7 @@ Every answer the system produces names at least one source document.
 **Why this target:**
 <!-- Why all five and not four? What about your setup makes that achievable —
      or what would have to go wrong for it not to be? -->
-`build_prompt` labels every chunk `[from {source}]`, so the filename is always
-in front of the model, and `GROUNDING_INSTRUCTION` requires naming it. The
-mechanism is already there — five of five is the right bar because a missing
-citation isn't a near miss, it's an untraceable answer. What would have to go
-wrong: the model answering from training data instead of the documents, or
-dropping the citation under the instruction's two-or-three-sentence brevity
-rule, which is where I'd expect it to give first.
+Ensure the response has evidence to backup, and I can check this in the run log by comparing the named file against the retrieved chunks. The second half is what makes it a real test: the model can cite a plausible filename it was never shown, so naming a source isn't automatic.
 
 ---
 
@@ -60,10 +54,11 @@ in at least 4 of 5 tries.
 **Why this target:**
 <!-- What did your distances look like when you set the cutoff in Milestone 4?
      Was there a clean gap, or did the two groups overlap? -->
+The gate is one distance cutoff, and my corpus is school admin documents, so an off-topic school question (parking, dining) can land close to real chunks and the two distance groups may overlap. 
 
 ---
 
-## 4. Something about your chunks
+## 4. Chunks read as complete thoughts
 
 <!-- YOU WRITE THIS ONE.
 
@@ -76,16 +71,16 @@ in at least 4 of 5 tries.
           sentence cut in half at either end."
        - "No chunk is shorter than 200 characters, since anything below that
           in my corpus turned out to be a heading with no content under it." -->
-
+Ensure each chunk is usable and complete. Each piece of text your system stores makes sense on its own, so you could read it without needing the text before or after it.
 
 
 **Why this target:**
-
+The short admin pages made of headings and policy sentences, so two things can go wrong: a cut lands in the middle of a sentence, which splits an answer so that neither half matches the question, or a heading ends up as its own chunk with nothing under it, which answers nothing. 
 
 
 ---
 
-## 5. Your choice
+## 5. Source attribution is correct, not just present
 
 <!-- YOU WRITE THIS ONE TOO.
 
@@ -94,12 +89,12 @@ in at least 4 of 5 tries.
      handles badly, about source attribution being correct rather than merely
      present — anything, as long as it names a number or an observable
      outcome. -->
+Read the source the system named in its answer. The system knows which file holds the answer. For example, for the major question, `admin_declaring_a_major.txt` is the source.
 
 
 
 **Why this target:**
-
-
+Criterion 2 only checks that a source is named and that it was retrieved, which a wrong-but-retrieved file would also satisfy. In a guide people use for decisions about majors and deadlines, a confident citation to the wrong document is worse than none, because the student won't double-check.
 
 ---
 
