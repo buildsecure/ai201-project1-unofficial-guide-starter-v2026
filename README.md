@@ -101,10 +101,22 @@ Hours are 7:30am to 7:00pm weekdays
      visible. Milestone 4. -->
 
 **Question:**
+What is the study abroad application deadline and process?
 
 **Answer:**
 
 ```
+  (best distance 0.361, cutoff 0.6)
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+
+Based on the provided documents, applications for study abroad open in October for the following academic year, but no further details about the application deadline or process are mentioned. 
+
+Source: `admin_study_abroad.txt`
+
+Sources retrieved: admin_add_drop_deadline.txt, admin_graduation_requirements.txt, admin_study_abroad.txt, advising_registration.txt, course_engl_205.txt
+
+1 model calls this session, 558 tokens (512 in, 46 out)
+
 ```
 
 **My relevance cutoff:**
@@ -120,7 +132,14 @@ Hours are 7:30am to 7:00pm weekdays
 
 | Question | In corpus? | Best distance |
 |---|---|---|
-|  |  |  |
+| Provide me information on parking permits | Yes |  |
+| When is the add deadline? | Yes |  |
+| When I must declare a major? | Yes |  |
+| What is the study abroad application deadline and process? | Yes |  |
+| What was the on-time arrival rate of United Airlines in 2025? | No | |
+| Who is the president of United States? | No |  |
+| Give me details on registration? | Yes |  |
+
 
 ## How I Used AI
 
@@ -134,8 +153,9 @@ Hours are 7:30am to 7:00pm weekdays
      Milestone 5. -->
 
 **1.**
-
+I asked AI to evaluate the chunks.
 **2.**
+Brainstorming and provide me ideas.
 
 <!-- ── Stretch features ─────────────────────────────────────────────────────
      Doing one? Say so here BEFORE you start. A feature this README never
