@@ -25,8 +25,7 @@ contains the answer.
 **Why this target:**
 <!-- e.g. "One of my questions is about a topic only two documents mention, so
      I expect that one to be hard." -->
-One of my question is about when can I choose the major, and the source is in `admin_declaring_a_major.txt`, a short passage that other advising files with similar vocabulary could outrank, so I allow one miss.
-
+One of my question is about when can I choose the major, and the source is in `admin_declaring_a_major.txt`, a short passage on the declaring a major. The chunk should contain the answer `You declare at the end of your second semester, or later if you need to.` 
 ---
 
 ## 2. Every answer names a source
@@ -75,12 +74,12 @@ Ensure each chunk is usable and complete. Each piece of text your system stores 
 
 
 **Why this target:**
-The short admin pages made of headings and policy sentences, so two things can go wrong: a cut lands in the middle of a sentence, which splits an answer so that neither half matches the question, or a heading ends up as its own chunk with nothing under it, which answers nothing. 
+Each chunk must be a complete sentence. The paragraph made of headings and policy sentences, so two things can go wrong: a cut lands in the middle of a sentence, which splits an answer so that neither half matches the question, or a heading ends up as its own chunk with nothing under it, which answers nothing. 
 
 
 ---
 
-## 5. Source attribution is correct, not just present
+## 5. Source attribution is correct and verified
 
 <!-- YOU WRITE THIS ONE TOO.
 
