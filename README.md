@@ -58,29 +58,41 @@ The campus_life corpus is made up of 88 documents, 27,908 characters, about 317 
 
      Milestone 3. -->
 
-**Chunk 1** — source: `` — produced by: ``
+**Chunk 1** — source: `admin_declaring_a_major.txt` — produced by: `chunker.py::split_documents`
 
 ```
+On the declaring a major
+You declare at the end of your second semester
 ```
 
-**Chunk 2** — source: `` — produced by: ``
-
+**Chunk 2** — source: `course_cs_210_exams.txt` — produced by: `chunker.py::split_documents`
 ```
-```
-
-**Chunk 3** — source: `` — produced by: ``
-
-```
+CS 210 Data Structures — assessment
+Two midterms and a final
+Midterms are curved
+The final is not.
 ```
 
-**Chunk 4** — source: `` — produced by: ``
+**Chunk 3** — source: `admin_pass_fail_option.txt` — produced by: `chunker.py::split_documents`
+```
+On the pass/fail option
+Any course outside your major can be taken pass/fail
+```
+
+**Chunk 4** — source: `admin_study_abroad.txt` — produced by: `chunker.py::split_documents`
 
 ```
+On the study abroad
+Applications open in October for the following academic year
+The financial aid package travels with you,
 ```
 
-**Chunk 5** — source: `` — produced by: ``
+**Chunk 5** — source: `dining_halden_hall.txt` — produced by: `chunker.py::split_documents`
 
 ```
+Halden Hall
+soup rotation
+Hours are 7:30am to 7:00pm weekdays
 ```
 
 ## Sample Answer
