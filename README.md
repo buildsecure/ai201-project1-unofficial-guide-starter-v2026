@@ -194,7 +194,50 @@ Brainstorming and provide me ideas.
 <!-- Underneath, paste the REAL output for each criterion from one of your
      runs — the actual text your system produced, not a description of it.
      Name the file and function that produced it. -->
+```
+##"Who is the president of United States?"
+  (best distance 0.947, cutoff 0.6)
 
+I don't have enough information about that.
+
+##"Give me details on registration?"      
+  (best distance 0.566, cutoff 0.6)
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+
+Based on the documents provided:
+
+You must have an adviser hold lifted before you can register, and because advisers get very busy the week before registration opens, you should book an appointment two weeks in advance. Additionally, registration times are staggered by credit hours (similar to the housing lottery), and popular courses tend to fill up within the first two days. 
+
+Source: *advising_registration.txt*
+
+Sources retrieved: admin_wifi_and_accounts.txt, advising_registration.txt, course_engl_205.txt, dining_verrill_street_grill.txt, dining_verrill_street_grill_followup.txt
+
+1 model calls this session, 697 tokens (614 in, 83 out)
+
+## When is the add deadline?"                    
+  (best distance 0.482, cutoff 0.6)
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+
+You can add a course through the end of the second week (admin_add_drop_deadline.txt).
+
+Sources retrieved: admin_add_drop_deadline.txt, admin_withdrawal_deadline.txt, advising_registration.txt, course_cs_210_workload.txt, course_cs_340_workload.txt
+
+1 model calls this session, 543 tokens (520 in, 23 out)
+
+
+##"When I must declare a major?"
+  (best distance 0.311, cutoff 0.6)
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+
+You declare a major at the end of your second semester, or later if you need to. 
+
+Source: admin_declaring_a_major.txt
+
+Sources retrieved: admin_add_drop_deadline.txt, admin_declaring_a_major.txt, admin_graduation_requirements.txt, admin_pass_fail_option.txt, admin_study_abroad.txt
+
+1 model calls this session, 511 tokens (478 in, 33 out)
+
+```
 ## Verdicts
 
 <!-- MET or MISSED for each of the five, against the target you wrote last
@@ -208,9 +251,9 @@ Brainstorming and provide me ideas.
 
 | # | Criterion | Verdict | How I decided |
 |---|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
+| 1 | Retrieved chunk contains the answer | MET | every run contains the answer |
+| 2 | Every answer names a source | MET | every run sited at least 1 source  |
+| 3 | Gate stops out-of-corpus questions | MET | always return `I don't have enough information about that.` on out-of-corpus questions |
 | 4 |  |  |  |
 | 5 |  |  |  |
 
