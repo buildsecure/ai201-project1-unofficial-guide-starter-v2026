@@ -130,7 +130,7 @@ Sources retrieved: admin_add_drop_deadline.txt, admin_graduation_requirements.tx
 
      Milestone 4. -->
 
-| Question | In corpus? | Best distance | Cutoff
+| Question | In corpus? | Best distance |
 |---|---|---|
 | Provide me information on parking permits | Yes |  0.538 |
 | When is the add deadline? | Yes |  |
