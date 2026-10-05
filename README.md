@@ -237,6 +237,39 @@ Sources retrieved: admin_add_drop_deadline.txt, admin_declaring_a_major.txt, adm
 
 1 model calls this session, 511 tokens (478 in, 33 out)
 
+
+##"Provide me information on parking permits"             
+  (best distance 0.538, cutoff 0.6)
+
+Student permits for the west lots go on sale in August and sell out in about three days, while the east lot never sells out because it is a 12-minute walk. There is no waitlist, so people who miss the window park legally but unmarked on Verrill Street and walk in. 
+
+Source: admin_parking_permits.txt
+
+Sources retrieved: admin_parking_permits.txt, advising_registration.txt, dining_pellew_dining_hall.txt, housing_calder_annexe.txt, transit_shuttle.txt
+
+0 model calls this session, 1 served from cache
+
+##"how can i find parking?"                  
+  (best distance 0.547, cutoff 0.6)
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+
+Student permits for the west lots go on sale in August, while the east lot never sells out because it is a 12-minute walk. There is no waitlist, so people who miss the sales window park legally on Verrill Street and walk in. 
+
+Source: `admin_parking_permits.txt`
+
+Sources retrieved: admin_parking_permits.txt, dining_halden_hall.txt, dining_pellew_dining_hall.txt, transit_shuttle.txt, transit_walking.txt
+
+1 model calls this session, 707 tokens (639 in, 68 out)
+
+
+## "What was the on-time arrival rate of United Airlines in 2025?"
+  (best distance 0.730, cutoff 0.6)
+
+I don't have enough information about that.
+
+0 model calls this session
+
+s
 ```
 ## Verdicts
 
@@ -293,9 +326,9 @@ Sources retrieved: admin_add_drop_deadline.txt, admin_declaring_a_major.txt, adm
 
 | Criterion | Target | Run 1 | Run 2 | Run 3 | Verdict |
 |---|---|---|---|---|---|
-| 1. Retrieved chunk contains the answer | 4 of 5 |  |  |  |  |
-| 2. Every answer names a source | 5 of 5 |  |  |  |  |
-| 3. Gate stops out-of-corpus questions | 4 of 5 |  |  |  |  |
+| 1. Retrieved chunk contains the answer | 4 of 5 | 4/5  | 5/5 | 5/5 | MET |
+| 2. Every answer names a source | 5 of 5 | 5/5  | 5/5 | 5/5 | MET |
+| 3. Gate stops out-of-corpus questions | 4 of 5 | 5/5 | 5/5 | 5/5 | MET |
 | 4. | | | | | |
 | 5. | | | | | |
 
@@ -317,6 +350,7 @@ Sources retrieved: admin_add_drop_deadline.txt, admin_declaring_a_major.txt, adm
      not.
 
      Milestone 5. -->
+All the criteria and tests are met.
 
 ## What I'd Do Differently
 
