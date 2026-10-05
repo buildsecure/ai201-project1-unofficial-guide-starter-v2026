@@ -130,15 +130,15 @@ Sources retrieved: admin_add_drop_deadline.txt, admin_graduation_requirements.tx
 
      Milestone 4. -->
 
-| Question | In corpus? | Best distance |
+| Question | In corpus? | Best distance | Cutoff
 |---|---|---|
-| Provide me information on parking permits | Yes |  |
+| Provide me information on parking permits | Yes |  0.538 |
 | When is the add deadline? | Yes |  |
 | When I must declare a major? | Yes |  |
 | What is the study abroad application deadline and process? | Yes |  |
-| What was the on-time arrival rate of United Airlines in 2025? | No | |
-| Who is the president of United States? | No |  |
-| Give me details on registration? | Yes |  |
+| What was the on-time arrival rate of United Airlines in 2025? | No |0.730 |
+| Who is the president of United States? | No | 0.947 |
+| Give me details on registration? | Yes | 0.566 | 0.6 |
 
 
 ## How I Used AI
