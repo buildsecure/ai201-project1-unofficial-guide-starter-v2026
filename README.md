@@ -133,9 +133,9 @@ Sources retrieved: admin_add_drop_deadline.txt, admin_graduation_requirements.tx
 | Question | In corpus? | Best distance |
 |---|---|---|
 | Provide me information on parking permits | Yes |  0.538 |
-| When is the add deadline? | Yes |  |
-| When I must declare a major? | Yes |  |
-| What is the study abroad application deadline and process? | Yes |  |
+| When is the add deadline? | Yes | 0.482 |
+| When I must declare a major? | Yes | 0.311 |
+| What is the study abroad application deadline and process? | Yes | 0.357 |
 | What was the on-time arrival rate of United Airlines in 2025? | No |0.730 |
 | Who is the president of United States? | No | 0.947 |
 | Give me details on registration? | Yes | 0.566 | 0.6 |
@@ -185,9 +185,9 @@ Brainstorming and provide me ideas.
 
 | Criterion | Target | Run 1 | Run 2 | Run 3 | Verdict |
 |---|---|---|---|---|---|
-| 1. Retrieved chunk contains the answer | 4 of 5 |  |  |  |  |
-| 2. Every answer names a source | 5 of 5 |  |  |  |  |
-| 3. Gate stops out-of-corpus questions | 4 of 5 |  |  |  |  |
+| 1. Retrieved chunk contains the answer | 4 of 5 | 4/5  | 5/5 | 5/5 | MET |
+| 2. Every answer names a source | 5 of 5 | 5/5  | 5/5 | 5/5 | MET |
+| 3. Gate stops out-of-corpus questions | 4 of 5 | 5/5 | 5/5 | 5/5 | MET |
 | 4. | | | | | |
 | 5. | | | | | |
 
